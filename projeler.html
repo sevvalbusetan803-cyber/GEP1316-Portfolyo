@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeler | Şevval Buse Tan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand">Şevval Buse Tan</a>
+      <button id="menu-toggle" class="menu-btn" aria-label="Menüyü aç/kapat" aria-expanded="false">☰</button>
+      <nav id="main-nav" class="main-nav" aria-label="Ana Menü">
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="hakkimda.html">Hakkımda</a></li>
+          <li><a href="projeler.html" class="active">Projeler</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="theme-btn" aria-label="Karanlık modu değiştir">🌙</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Dönem İçi Çalışmalarım</h1>
+      <p>GEP1316 Kodlama Okuryazarlığı dersi kapsamında geliştirdiğim algoritmalar, Python uygulamaları ve analizler.</p>
+    </section>
+
+    <section class="filter-bar" aria-label="Proje Filtreleme">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Tümü (4)</button>
+        <button class="filter-btn" data-filter="python">Python & Veri</button>
+        <button class="filter-btn" data-filter="algoritma">Algoritma & Akış</button>
+        <button class="filter-btn" data-filter="web">Web & YZ</button>
+      </div>
+      <div class="search-box">
+        <label for="project-search" class="sr-only">Proje ara</label>
+        <input type="search" id="project-search" placeholder="Proje adı veya teknoloji ara...">
+      </div>
+    </section>
+
+    <section id="projects-grid" class="grid-2">
+      <article class="card project-card" data-category="python">
+        <div class="project-thumb thumb-1" role="img" aria-label="Python İlaç Hatırlatıcı terminal çıktısı temsili görseli">
+          <span>Python • CSV • CLI</span>
+        </div>
+        <h2>İlaç Hatırlatıcı ve Tedavi Planlayıcı</h2>
+        <p>Hastaların ilaç dozaj saatlerini, kullanım sıklığını ve tedavi sürelerini takip eden ve CSV formatında dışa aktaran Python uygulaması.</p>
+        <p class="learned"><strong>Ne öğrendim:</strong> Python veri yapılarıyla kullanıcı girdilerini doğrulamayı ve CSV modülü ile kalıcı veri çıktısı üretmeyi öğrendim.</p>
+        <a href="https://github.com/sevvalbusetan803-cyber/GEP1316-Illac-Hatirlatici" target="_blank" rel="noopener noreferrer" class="btn secondary">GitHub Deposu →</a>
+      </article>
+
+      <article class="card project-card" data-category="algoritma">
+        <div class="project-thumb thumb-2" role="img" aria-label="Eczane Reçete Kuyruğu Akış Şeması diyagramı temsili görseli">
+          <span>Algoritma • Mermaid.js</span>
+        </div>
+        <h2>Eczane Reçete Kuyruğu Akış Şeması</h2>
+        <p>Eczane yoğunluğunda yaş (65+ önceliği) ve acil durum parametrelerine göre reçete sırasını dinamik düzenleyen karar algoritması ve Mermaid diyagramı.</p>
+        <p class="learned"><strong>Ne öğrendim:</strong> Karmaşık gerçek hayat kurallarını koşullu dallanmalar (if-else) ile hatasız akış şemalarına dönüştürmeyi kavradım.</p>
+        <a href="https://github.com/sevvalbusetan803-cyber" target="_blank" rel="noopener noreferrer" class="btn secondary">GitHub Profilim →</a>
+      </article>
+
+      <article class="card project-card" data-category="algoritma">
+        <div class="project-thumb thumb-3" role="img" aria-label="Çoklu Senaryo Algoritmik Problem Çözümü temsili görseli">
+          <span>Problem Çözme • Mantık</span>
+        </div>
+        <h2>Çoklu Senaryo Algoritmik Analiz (Ödev 3)</h2>
+        <p>Kulüp etkinlik kontenjan yönetimi, öğrenci okuma takibi ve dijital iyi oluş puanlaması gibi 5 farklı problem için adım adım sözde kod (pseudocode) tasarımı.</p>
+        <p class="learned"><strong>Ne öğrendim:</strong> Kod yazmaya başlamadan önce sınır durumlarını (edge cases) ve veri akışını planlamanın hata oranını düşürdüğünü gördüm.</p>
+        <a href="https://github.com/sevvalbusetan803-cyber" target="_blank" rel="noopener noreferrer" class="btn secondary">GitHub Profilim →</a>
+      </article>
+
+      <article class="card project-card" data-category="web">
+        <div class="project-thumb thumb-4" role="img" aria-label="Kişisel Web Portfolyosu ve Erişilebilirlik temsili görseli">
+          <span>HTML5 • CSS3 • JS</span>
+        </div>
+        <h2>Kişisel Akademik Web Portfolyosu</h2>
+        <p>Anlamsal HTML, duyarlı CSS tasarımı ve etkileşimli JavaScript bileşenleriyle geliştirilen, WCAG erişilebilirlik standartlarına uygun çok sayfalı web sitesi.</p>
+        <p class="learned"><strong>Ne öğrendim:</strong> Üretken yapay zekânın ürettiği ön yüz kodlarını erişilebilirlik, güvenlik ve gizlilik ilkelerine göre denetleyip özelleştirmeyi öğrendim.</p>
+        <a href="https://github.com/sevvalbusetan803-cyber" target="_blank" rel="noopener noreferrer" class="btn secondary">GitHub Profilim →</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Şevval Buse Tan • GEP1316 Kodlama Okuryazarlığı Portfolyosu</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

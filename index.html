@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Şevval Buse Tan | Kişisel Portfolyo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand">Şevval Buse Tan</a>
+      <button id="menu-toggle" class="menu-btn" aria-label="Menüyü aç/kapat" aria-expanded="false">☰</button>
+      <nav id="main-nav" class="main-nav" aria-label="Ana Menü">
+        <ul>
+          <li><a href="index.html" class="active">Ana Sayfa</a></li>
+          <li><a href="hakkimda.html">Hakkımda</a></li>
+          <li><a href="projeler.html">Projeler</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="theme-btn" aria-label="Karanlık modu değiştir">🌙</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-avatar">
+        <img src="avatar.jpg" alt="Şevval Buse Tan profil fotoğrafı" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="avatar-fallback" style="display:none;">ŞBT</div>
+      </div>
+      <div class="hero-text">
+        <span class="badge">Eczacılık 4. Sınıf • Bahçeşehir Üniversitesi</span>
+        <h1>Merhaba, ben Şevval Buse Tan.</h1>
+        <p>
+          Bahçeşehir Üniversitesi'nde %100 İngilizce Eczacılık eğitimi alıyorum. Klinik eczacılık deneyimimi 
+          algoritmik düşünme, Python veri işleme ve yapay zekâ destekli dijital sağlık çözümleriyle birleştiriyorum.
+        </p>
+        <div class="hero-actions">
+          <a href="projeler.html" class="btn primary">Projelerimi İncele</a>
+          <a href="hakkimda.html" class="btn secondary">Eğitim & Vizyonum</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlights">
+      <h2>Odak Alanlarım</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Klinik & Hastane Eczacılığı</h3>
+          <p>Dokuz Eylül Üniversitesi Uygulama ve Araştırma Hastanesi stajı ile akılcı ilaç kullanımı ve hasta güvenliği pratikleri.</p>
+        </article>
+        <article class="card">
+          <h3>Algoritmik Düşünme & Kodlama</h3>
+          <p>Eczane iş akışlarını ve tedavi takip süreçlerini Python ve web teknolojileriyle otomatize eden araçlar geliştirme.</p>
+        </article>
+        <article class="card">
+          <h3>Sivil Toplum & Liderlik</h3>
+          <p>BAU Genç Yeşilay Kulübü bünyesinde bağımlılıkla mücadele ve sağlıklı yaşam farkındalığı etkinlikleri koordinasyonu.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Şevval Buse Tan • GEP1316 Kodlama Okuryazarlığı Portfolyosu</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

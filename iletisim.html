@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim | Şevval Buse Tan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand">Şevval Buse Tan</a>
+      <button id="menu-toggle" class="menu-btn" aria-label="Menüyü aç/kapat" aria-expanded="false">☰</button>
+      <nav id="main-nav" class="main-nav" aria-label="Ana Menü">
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="hakkimda.html">Hakkımda</a></li>
+          <li><a href="projeler.html">Projeler</a></li>
+          <li><a href="iletisim.html" class="active">İletişim</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="theme-btn" aria-label="Karanlık modu değiştir">🌙</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>İletişim</h1>
+      <p>Akademik iş birlikleri, projeler veya sorularınız için aşağıdaki formu kullanabilirsiniz.</p>
+    </section>
+
+    <div class="grid-2">
+      <section class="card">
+        <h2>Mesaj Gönderin</h2>
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Adınız Soyadınız *</label>
+            <input type="text" id="name" name="name" required placeholder="Örn: Dr. Ayşe Yılmaz">
+            <small class="error-msg" id="name-error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-posta Adresiniz *</label>
+            <input type="email" id="email" name="email" required placeholder="ornek@kurum.edu.tr">
+            <small class="error-msg" id="email-error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Konu *</label>
+            <select id="subject" name="subject" required>
+              <option value="">Seçiniz...</option>
+              <option value="akademik">Akademik / Araştırma</option>
+              <option value="proje">Proje Geri Bildirimi</option>
+              <option value="diger">Diğer</option>
+            </select>
+            <small class="error-msg" id="subject-error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mesajınız (En az 15 karakter) *</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Mesajınızı buraya yazınız..."></textarea>
+            <small class="error-msg" id="message-error" aria-live="polite"></small>
+          </div>
+
+          <p class="privacy-note">
+            <strong>Gizlilik Aydınlatması:</strong> Bu form yalnızca iletişim talebinize yanıt verebilmek amacıyla adınız, e-posta adresiniz ve mesaj içeriğinizi tarayıcı düzeyinde işler; gereksiz kişisel veri toplanmaz ve üçüncü taraf izleyici betik kullanılmaz.
+          </p>
+
+          <button type="submit" class="btn primary">Mesajı Gönder</button>
+          <div id="form-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+        </form>
+      </section>
+
+      <aside class="card">
+        <h2>Profesyonel Bağlantılar</h2>
+        <p>Akademik profilime ve açık kaynak kod çalışmalarıma aşağıdaki kanallardan ulaşabilirsiniz:</p>
+        <ul class="clean-list">
+          <li><strong>Kurum:</strong> Bahçeşehir Üniversitesi – Eczacılık Fakültesi (İstanbul)</li>
+          <li><strong>Kurumsal E-posta:</strong> <a href="mailto:sevval.tan@bahcesehir.edu.tr">sevval.tan@bahcesehir.edu.tr</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/sevvalbusetan803-cyber" target="_blank" rel="noopener noreferrer">github.com/sevvalbusetan803-cyber</a></li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Şevval Buse Tan • GEP1316 Kodlama Okuryazarlığı Portfolyosu</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
