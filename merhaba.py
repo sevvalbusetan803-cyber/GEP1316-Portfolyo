@@ -30,3 +30,4 @@ else:
     # Kullanıcının adına ve hesaplanan yaşına özel karşılama mesajını ekrana yazdırıyoruz
     print(f"\nMerhaba {ad}! GEP1316 Kodlama Okuryazarlığı dersine hoş geldin.")
     print(f"{guncel_yil} yılı itibarıyla {yas} yaşındasın. Başarılar dilerim!")
+    
